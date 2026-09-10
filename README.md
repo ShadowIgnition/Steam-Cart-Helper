@@ -19,6 +19,8 @@ Search Steam and add a game's main store package to your cart from the extension
 3. Search for a game by title. You can also enter a Steam App ID directly.
 4. Choose **Add to cart** beside the game you want.
 
+<img width="1748" height="753" alt="image" src="https://github.com/user-attachments/assets/51d2244f-7f36-48ee-9bb5-80c8f7d57e63" />
+
 ## Notes
 
 - Add-to-cart works only while the active tab is the Steam Store. Otherwise, the extension offers to open it.
