@@ -8,7 +8,7 @@ Search Steam and add a game's main store package to your cart from the extension
 
 1. Download and extract the project ZIP.
 2. In Chrome, open `chrome://extensions`.
-3. Turn on **Developer mode**.
+3. Turn on **Developer mode** (Must remain on in-order to use extension).
 4. Select **Load unpacked** and choose the extracted folder containing `manifest.json`.
 5. Pin **Steam Cart Helper** from Chrome's Extensions menu if you want quick access.
 
