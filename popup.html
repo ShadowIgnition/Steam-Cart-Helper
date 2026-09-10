@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Send addToCart(x)</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Find a game</h1>
+      <p class="intro">Search Steam, then add a game to your cart.</p>
+
+      <label for="steam-search">Game title</label>
+      <div class="input-row">
+        <input
+          id="steam-search"
+          name="steam-search"
+          type="search"
+          autocomplete="off"
+          spellcheck="false"
+          placeholder="Try Hades or Portal"
+          autofocus
+        />
+        <button id="lookup-button" type="button">Search</button>
+      </div>
+      <output id="lookup-status" aria-live="polite"></output>
+      <div id="search-results" class="search-results" aria-label="Steam search results"></div>
+      <output id="cart-status" aria-live="polite"></output>
+      <button id="open-steam-store" type="button" hidden>Open Steam Store</button>
+
+      <footer class="tip">
+        <span class="tip-label">Tip with Bitcoin:</span>
+        <span class="tip-address">bc1q0s89su2afs2m3ylustlskdjgzu62ycmzsvk7mv</span>
+      </footer>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>

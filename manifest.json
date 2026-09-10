@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "Steam Cart Helper",
+  "description": "Searches Steam and calls addToCart(packageId) for a selected result in the active tab.",
+  "version": "1.0",
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "action": {
+    "default_title": "Search Steam and add to cart",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "32": "icons/icon-32.png",
+      "48": "icons/icon-48.png",
+      "128": "icons/icon-128.png"
+    }
+  },
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://store.steampowered.com/*",
+    "https://*.steamstatic.com/*"
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'; img-src 'self' https://*.steamstatic.com;"
+  }
+}
